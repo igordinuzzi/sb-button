@@ -63,7 +63,7 @@
             justify-content: center;
             width: 30px;
             height: 30px;
-            background-color: #280050; /* Default for the left button */
+            background-color: #280050; /* Default for the circle */
             border-radius: 50%;
             transition: background-color 0.3s ease;
         }
@@ -83,6 +83,15 @@
 
         .button:hover .circle-wrapper {
             transform: translateX(10px);
+        }
+
+        /* Left button specific styles */
+        .left .button .circle {
+            background-color: #FF6600;
+        }
+
+        .left .button .circle i {
+            color: #FFFFFF;
         }
 
         /* Right button specific styles */
