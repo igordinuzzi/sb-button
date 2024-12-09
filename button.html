@@ -63,7 +63,7 @@
             justify-content: center;
             width: 30px;
             height: 30px;
-            background-color: #280050; /* Consistent circle color */
+            background-color: #280050; /* Default for the left button */
             border-radius: 50%;
             transition: background-color 0.3s ease;
         }
@@ -85,19 +85,31 @@
             transform: translateX(10px);
         }
 
-        .button:hover .circle {
-            background-color: #280050;
-        }
-
         /* Right button specific styles */
         .right .button {
-            background-color: #FF6600;
+            border-color: #FFA733;
+            color: #FFA733;
+        }
+
+        .right .button .circle {
+            background-color: #FFA733;
+        }
+
+        .right .button .circle i {
             color: #280050;
         }
 
         .right .button:hover {
-            background-color: #ffffff;
+            background-color: #FFA733;
             color: #280050;
+        }
+
+        .right .button:hover .circle {
+            background-color: #280050;
+        }
+
+        .right .button:hover .circle i {
+            color: #FFA733;
         }
     </style>
 </head>
